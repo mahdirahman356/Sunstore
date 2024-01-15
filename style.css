@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* fixed-styles */
+body{
+    font-family: lato;
+}
+header{
+    max-width: calc(100% - 50px);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* header-styles */
+nav{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.sun-title{
+    font-size: 30px;
+}
+ul li,a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+ul i{
+    font-size: 20px;
+}
+.designer-container{
+     height: 80vh;
+     background-image: url(sun.webp);
+     background-size: cover;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     
+}
+.designer-title{
+    color: white;
+    font-size: 60px;
+    padding-left: 50px;
+}
+.designer-description{
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+
+
+
+
+   /* main-styles */
+   main{
+    max-width: calc(100% - 300px);
+    margin-left: auto;
+    margin-right: auto ;
+   }
+    .card-container{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+    }
+    .card{
+         box-shadow: 20px 20px 20px rgb(226, 226, 226);
+         padding-bottom: 40px;
+         border-radius: 20px;
+         background-color: rgb(239, 239, 239);
+    }
+    
+    .card img{
+         width: 100%;
+         border-top-right-radius: 20px;
+         border-top-left-radius: 20px;
+    }
+    .card-title,.price{
+        font-size: 25px;
+        margin-top: 10px;
+        padding-left: 10px;
+    }
+    /* section-brands-and-styles */
+
+    .brands-and-styles{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: calc(100% - 30px);
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        display: flex;
+        gap: 20px;
+    }
+    .brands,.styles{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+        padding-left: 50px;
+
+    }
+    .brands{
+        background-image: url(sun-last-2.webp);
+        background-size: cover;
+    }
+    .styles{
+        background-image: url(sun-last-1.webp);
+        background-size: cover;
+    }
+    .brands-title,.styles-title{
+        padding-top: 250px;
+        color: white;
+        font-size: 80px;
+        word-spacing: 20px;
+        font-weight: 400;
+    }
+    .brands-description,.styles-description{
+        color: white;
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .shop{
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 20px 40px;
+        background: none;
+        border: 2px solid white;
+    }
+    /* footer-styles */
+    footer{
+        margin-top: 100px;
+        text-align: center;
+        background: #0A0826;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .footer-title{
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .footer-description-one{
+        color: var(--Text-Gray-300, #D9DBE1);
+        font-feature-settings: 'liga' off;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .footer-description-two{
+        color: var(--Text-Gray-300, #D9DBE1);
+        font-feature-settings: 'liga' off;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .icon i{
+        color: white;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    
+
+
+    /* responsive-styles */
+@media screen and (max-width:576px){
+    header{
+        max-width: 100%;
+    }
+    nav{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    ul{
+        gap: 30px;
+    }
+    .sun-title{
+        font-size: 20px;
+    }
+    .designer-container{
+        height: 40vh;
+    }
+    .designer-title{
+        font-size: 35px;
+        padding-left: 10px;
+    }
+    .designer-description{
+        font-size: 15px;
+        padding-left: 10px;
+    }
+    main{
+        max-width: 90%;
+    }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .brands-and-styles{
+        height: 150vh;
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .brands,.styles{
+        height: 100vh;
+        padding-left: 10px;
+        
+    }
+    .brands-title,.styles-title{
+       font-size: 40px;
+       padding-top: 10px;
+       word-spacing: 5px;
+    }
+    .brands-description,.styles-description{
+       font-size: 15px;
+    }
+    .shop{
+        padding:5px 25px ;
+        font-size: 10px;
+    }
+
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    nav{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    ul{
+        gap: 50px;
+    }
+    main{
+        max-width: 90%;
+    }
+    .card-title,.price{
+        font-size: 18px;
+    }
+    .brands-and-styles{
+        height: 200vh;
+        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .brands-title,.styles-title{
+        font-size: 40px;
+        padding-top: 10px;
+        word-spacing: 5px;
+     }
+     .brands,.styles{
+        padding-left: 10px;
+    }
+    
+}
